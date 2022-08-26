@@ -6,7 +6,7 @@ package AdvSoftwareEngineering.Creational;
 
 // Assume all loggers follow an interface..
 interface LoggingDI {
-    void recordLog();
+    abstract void recordLog();
 }
 
 // We have our first version of the logger

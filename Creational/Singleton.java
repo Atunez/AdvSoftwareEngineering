@@ -10,6 +10,8 @@ package AdvSoftwareEngineering.Creational;
 class LoggingSingleton {
     private static LoggingSingleton me;
 
+    // In this case, I am somewhat making this counter be a "global" state, but you can think that this
+    // is a link to log a metric to some website and so on..
     private int counter;
 
     private LoggingSingleton(){
@@ -32,6 +34,7 @@ class LoggingSingleton {
 
 public class Singleton {
     public static void main(String[] args) {
+        // Both of these grab the same instance.
         LoggingSingleton inst1 = LoggingSingleton.getInstance();
         LoggingSingleton inst2 = LoggingSingleton.getInstance();
 
