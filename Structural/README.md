@@ -1,0 +1,1 @@
+Mostly Coding up examples of structural design patterns [Ie, patterns that deal with assemble and structre objects] I will put the context of a problem in the respective file for the pattern
