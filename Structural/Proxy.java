@@ -3,8 +3,6 @@ package AdvSoftwareEngineering.Structural;
 import java.util.HashMap;
 import java.util.Map;
 
-import javax.xml.crypto.Data;
-
 interface DataBaseMethods {
     abstract void putData(String key, String value);
     abstract String getData(String key);
