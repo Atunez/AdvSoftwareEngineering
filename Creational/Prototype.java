@@ -1,4 +1,4 @@
-package AdvSoftwareEngineering.Creational;
+package Creational;
 
 // Prototype is all about being able to clone yourself and give a "new" instace without having to call new.
 

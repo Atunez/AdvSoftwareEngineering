@@ -1,4 +1,4 @@
-package AdvSoftwareEngineering.Creational;
+package Creational;
 
 // DI Deals with injecting an object instead of creating it.
 // For example, assume you have some logger that logs into AWS (For example)

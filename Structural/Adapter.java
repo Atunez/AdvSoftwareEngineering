@@ -1,4 +1,4 @@
-package AdvSoftwareEngineering.Structural;
+package Structural;
 
 // Adapter is just a fancy way to cast objects.
 // Although, from your end, you don't really have to worry about how the casting is done.

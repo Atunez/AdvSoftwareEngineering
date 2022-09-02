@@ -1,4 +1,4 @@
-package AdvSoftwareEngineering.Structural;
+package Structural;
 
 
 // Client needs an abstraction to some actual application for the bridge to work

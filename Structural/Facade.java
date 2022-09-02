@@ -1,4 +1,4 @@
-package AdvSoftwareEngineering.Structural;
+package Structural;
 
 // Basic Classes to set up...
 class Audio {

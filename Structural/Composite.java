@@ -1,4 +1,4 @@
-package AdvSoftwareEngineering.Structural;
+package Structural;
 
 import java.util.ArrayList;
 

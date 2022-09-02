@@ -1,4 +1,4 @@
-package AdvSoftwareEngineering.Structural;
+package Structural;
 
 // Decorator is just adding things on top of things till it works
 // Starting with a base and moving upwards...

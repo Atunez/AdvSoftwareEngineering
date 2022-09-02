@@ -1,4 +1,4 @@
-package AdvSoftwareEngineering.Creational;
+package Creational;
 
 // Singleton deals with ensuring that only ONE instance of a class is ever made.
 // Consider Singleton if:

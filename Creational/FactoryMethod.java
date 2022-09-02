@@ -1,4 +1,4 @@
-package AdvSoftwareEngineering.Creational;
+package Creational;
 
 // This Pattern is weird...
 // Essentially, it seems that, compared to the AbstractFactory, you only really care about a singular Object

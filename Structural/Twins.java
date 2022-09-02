@@ -1,4 +1,4 @@
-package AdvSoftwareEngineering.Structural;
+package Structural;
 
 // Base Classes
 class ToBeExtendedFirst {
@@ -9,9 +9,7 @@ class ToBeExtendedFirst {
     }
 }
 
-class ToBeExtendedSecond {
-    public ToBeExtendedSecond(){}
-
+abstract class ToBeExtendedSecond {
     public int canDoMultiplication(int one, int two){
         return one * two;
     }
@@ -21,7 +19,9 @@ class ToBeExtendedSecond {
 class WishesToExtendBoth extends ToBeExtendedFirst {
     private Twin twin;
 
-    public WishesToExtendBoth(){}
+    public WishesToExtendBoth(){
+        this.twin = new Twin(this);
+    }
 
     public void setTwin(Twin twin){
         this.twin = twin;
@@ -35,15 +35,18 @@ class WishesToExtendBoth extends ToBeExtendedFirst {
     public int canSquare(int one){
         return twin.canDoMultiplication(one, one);
     }
+
+    public int canDoTimesThree(int one){
+        return twin.canDoTimesThree(one);
+    }
+
 }
 
 class Twin extends ToBeExtendedSecond {
     private WishesToExtendBoth OtherTwin;
 
-    public Twin(){}
-
-    public void setTwin(WishesToExtendBoth twin){
-        this.OtherTwin = twin;
+    public Twin(WishesToExtendBoth ot){
+        this.OtherTwin = ot;
     }
 
     @Override
@@ -60,13 +63,8 @@ class Twin extends ToBeExtendedSecond {
 public class Twins {
     public static void main(String[] args) {
         WishesToExtendBoth first = new WishesToExtendBoth();
-        Twin second = new Twin();
-
-        // We must actually do this part by hand unfortunately...
-        first.setTwin(second);
-        second.setTwin(first);
 
         System.out.println(first.canSquare(2));
-        System.out.println(second.canDoTimesThree(2));
+        System.out.println(first.canDoTimesThree(2));
     }
 }
